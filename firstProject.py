@@ -16,7 +16,7 @@ if this_year in mixed_array:
 for data in mixed_array:
     print(data)
 
-for timeLoop in range(4):
+for timeLoop in range(4, 0, -1):
     right_this_minute = datetime.today().minute
     if 1 == right_this_minute % 2:
         print("This minute seems a little odd.")
