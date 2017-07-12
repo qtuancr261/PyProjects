@@ -1,4 +1,4 @@
-print("range(10, 0, -1) : ")
+print("range(10, 5, -1) : ")
 for num in range(10, 5, -1):
     print(num)
 print("--------------------\nrange(10, 20)")
