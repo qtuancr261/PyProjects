@@ -31,7 +31,16 @@ foundChar = []
 for char in checkWord:
     if char in vowels and char not in foundChar:
         foundChar.append(char)
+        vowels.remove(char)
 for char in foundChar:
     print(char, checkWord.capitalize())
-
-
+print("vowels list contains: ",vowels)
+print("the last vowel char we found: ", foundChar[len(foundChar) - 1])
+print("Now we remove that one from the foundChar list: ", foundChar.pop(), foundChar)
+print("We remove everything form foundChar list")
+for char in range(len(foundChar)):
+    foundChar.pop()
+print("foundChar = ", foundChar)
+print("Rebuild it again")
+foundChar.extend(['u', 'e', 'o', 'a', 'i'])
+print("Now foundChar = ", foundChar)
