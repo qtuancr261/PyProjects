@@ -30,3 +30,4 @@ print("list1_Copy = ", list1_Copy)
 
 
 print(words[2:100])
+print(phrase[-6:])
