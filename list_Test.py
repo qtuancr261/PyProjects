@@ -1,3 +1,4 @@
+import os
 string = "Let see a string"
 List = list(string)
 print(List)
@@ -13,4 +14,13 @@ print(inputSTR)
 if inputSTR.capitalize() == inputSTR[::-1].capitalize():
     print("It's a symmetric string - ignore case sensitive")
 else:
-    print("Just forget this word")
+    print("Just forget this word - ", len(inputSTR))
+
+checkNum = int(input("Give me a number: "))
+saying =  "It's prime number"
+word = list(saying)
+for value in range(2, int(checkNum/2)):
+    if checkNum % value == 0:
+        word.insert(5, "not ")
+        break
+print("".join(word))
