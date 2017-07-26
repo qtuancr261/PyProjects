@@ -20,20 +20,19 @@ for key in person:
     print(person[key])
 
 vowels = ["u", "e", "o", "a"]
-found = {"u": 0,
-         "e": 0,
-         "o": 0,
-         "a": 0,
-         "i": 0}
+foundVowels = {}
 word = input("Give me a word: ");
 for char in word:
-    if char in vowels:
-        found[char] += 1
-for key in sorted(found):
-    if found[key] > 0:
-        print(key, "was found ", found[key], " times")
-
-for key, value in sorted(found.items()):
+    if char in vowels and char in foundVowels:
+        foundVowels[char] += 1
+    elif char in vowels and char not in foundVowels:
+        foundVowels[char] = 1
+print("We test for loop: for key in sorted(foundVowels)")
+for key in sorted(foundVowels):
+    if foundVowels[key] > 0:
+        print(key, "was found ", foundVowels[key], " times")
+print("Now test for loop: for key, value in sorted(foundVowels.items())")
+for key, value in sorted(foundVowels.items()):
     if value > 0:
         print(key, "was found ", value, " times")
-
+print("found = ", foundVowels)
