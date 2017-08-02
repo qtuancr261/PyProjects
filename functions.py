@@ -22,6 +22,11 @@ def check_prime(numberPara:int = 2) -> bool:
     return True
 
 
+def searchLetters(phrase: str, letters: str = 'aeiou') -> set:
+    """Return a set of the letters found in phrase"""
+    return set(letters).intersection(set(phrase))
+
+
 if check_prime(int(input("Give me the number: "))):
     print("-> a prime number")
 else:
@@ -36,6 +41,6 @@ if check_prime_number():
     print("-> a prime number")
 else:
     print("-> not a prime number")
-help(check_prime)
-listA = []
-print(listA)
+help(searchLetters)
+phrase = input("Input a phrase: ")
+print(searchLetters(phrase))
