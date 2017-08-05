@@ -1,0 +1,7 @@
+README.txt
+setup.py
+tqtPrivateLib.py
+tqtPrivateLib.egg-info/PKG-INFO
+tqtPrivateLib.egg-info/SOURCES.txt
+tqtPrivateLib.egg-info/dependency_links.txt
+tqtPrivateLib.egg-info/top_level.txt
