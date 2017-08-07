@@ -1,4 +1,4 @@
-def check_prime(numberPara:int = 2) -> bool:
+def check_prime(numberPara: int = 2) -> bool:
     """With argument"""
     if numberPara < 2:
         return False
