@@ -17,7 +17,6 @@ print("Occupation: " + person["occupation"])
 
 person["age"] = 21;
 print(person)
-
 for key in person:
     print(person[key])
 
